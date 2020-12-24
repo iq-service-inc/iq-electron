@@ -9,13 +9,9 @@ IQ-Electron 基於 [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 前�
 體驗 IQ-Electron 製作的 exe 應用程式
 
 <div style="text-align:center">
-
-#### win32 x64：[IQ-Electron-win32-x64.zip](https://iqservice.sharepoint.com/:u:/s/DevTeam1/EUZtB0E0w4NDvaWr9rALWsYBR2__VGN_5g1u_Lxv8F8HDw?e=6RF2ru)
-
+<b>win32 x64：<a href="https://iqservice.sharepoint.com/:u:/s/DevTeam1/EUZtB0E0w4NDvaWr9rALWsYBR2__VGN_5g1u_Lxv8F8HDw?e=6RF2ru" target="_blank">IQ-Electron-win32-x64.zip</a></b>
 <br>
-
-![elec-windows](http://10.9.173.136/uploads/-/system/personal_snippet/67/d9af17691fe20301acf428a9b74ac56c/elect-window.png)
-
+<img src="http://10.9.173.136/uploads/-/system/personal_snippet/67/d9af17691fe20301acf428a9b74ac56c/elect-window.png">
 </div>
 
 ## Quick Start
