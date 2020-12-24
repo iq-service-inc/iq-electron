@@ -25,6 +25,8 @@ class Main extends Component {
                         <Route exact path="/profile" render={() => <Profile />} />
                     </Switch>
 
+                    
+
                 </div>
 
             </ConnectedRouter>

@@ -13,6 +13,7 @@ class Deshboard extends Component {
                 </h3>
                 <div>
                     <FormattedMessage id='global.jump_to' defaultMessage='跳轉到' /> 
+                    <span> : </span>
                     <Link to='/profile'>Profile</Link>
                 </div>
             </div>
