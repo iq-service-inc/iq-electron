@@ -5,12 +5,13 @@ const merge = require('webpack-merge'),
     TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = merge(common, {
+    
     mode: 'production',
     devtool: false,
     output: {
         path: __dirname + '/dist/',
         filename: '[name].[chunkhash].js',
-        publicPath: '/dist/',
+        publicPath: '',
     },
     plugins: [
         new CleanWebpackPlugin(),

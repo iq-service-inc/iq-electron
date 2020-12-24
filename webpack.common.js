@@ -1,27 +1,28 @@
 const webpack = require('webpack'),
-	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	MiniCssExtractPlugin = require('mini-css-extract-plugin')
+    HtmlWebpackPlugin = require('html-webpack-plugin'),
+    MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-	entry: ['@babel/polyfill', './src/index.jsx'],
-	output: {
-		path: __dirname + '/dist/',
-		filename: '[name].[hash].js',
-		publicPath: '/'
-	},
-	module: {
-		rules: [
-			{
-				test: /\.(js|jsx)$/,
+    
+    entry: ['@babel/polyfill', './src/index.jsx'],
+    output: {
+        path: __dirname + '/dist/',
+        filename: '[name].[hash].js',
+        publicPath: '/'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
                     cacheDirectory: true,
-					plugins: ['react-hot-loader/babel'],
-				}
-			},
-			{
-				test: /\.styl$/,
+                    plugins: ['react-hot-loader/babel'],
+                }
+            },
+            {
+                test: /\.styl$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -42,24 +43,24 @@ module.exports = {
                     },
                     'stylus-loader'
                 ]
-			},
-			{
-				test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)$/,
-				loader: 'file-loader',
-				options: {
-					limit: 20000
-				}
+            },
+            {
+                test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)$/,
+                loader: 'file-loader',
+                options: {
+                    limit: 20000
+                }
 
-			},
-			{
+            },
+            {
                 test: /\.ico$/,
                 loader: 'url-loader',
                 options: {
                     name: '[name].[ext]',
                     limit: 1
                 }
-			},
-			{
+            },
+            {
                 test: /\.css$/,
                 use: [
                     {
@@ -71,25 +72,25 @@ module.exports = {
                     'css-loader'
                 ]
             }
-		]
-	},
-	resolve: {
-		alias: {
-			Config: `${__dirname}/config.json`,
-			'react-dom': '@hot-loader/react-dom',
-			'actions': `${__dirname}/src/actions`,
-			'lib': `${__dirname}/src/lib`,
-		},
-		extensions: ['.jsx', '.js', '.styl']
-	},
-	plugins: [
-		new MiniCssExtractPlugin({
+        ]
+    },
+    resolve: {
+        alias: {
+            Config: `${__dirname}/config.json`,
+            'react-dom': '@hot-loader/react-dom',
+            'actions': `${__dirname}/src/actions`,
+            'lib': `${__dirname}/src/lib`,
+        },
+        extensions: ['.jsx', '.js', '.styl']
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
         new webpack.optimize.ModuleConcatenationPlugin(),
         new HtmlWebpackPlugin({
-            template: `${__dirname}/www/index.html`,
+            template: `${__dirname}/index.html`,
             filename: "index.html",
             inject: "body"
         }),
@@ -97,10 +98,10 @@ module.exports = {
         //     $: "jquery",
         //     jQuery: "jquery",
         // })
-	],
+    ],
 
-	optimization: {
-		splitChunks: {
+    optimization: {
+        splitChunks: {
             cacheGroups: {
                 vendors: {
                     chunks: "async",
@@ -125,8 +126,22 @@ module.exports = {
                     name: 'vendors',
                     chunks: 'all',
                     enforce: true
+                },
+                intls: {
+                    test: /@formatjs.*/,
+                    name: 'intls',
+                    chunks: 'all',
+                    enforce: true
+                },
+                fortawesome: {
+                    test: /@fortawesome.*/,
+                    name: 'fortawesome',
+                    chunks: 'all',
+                    enforce: true
                 }
             }
         }
-	}
+    },
+
+
 };

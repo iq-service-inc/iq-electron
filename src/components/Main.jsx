@@ -6,6 +6,7 @@ import propTypes from 'prop-types'
 import Header from './Header'
 import Deshboard from './Deshboard'
 import Profile from './Profile'
+import { Link } from 'react-router-dom'
 
 class Main extends Component {
 
@@ -20,19 +21,19 @@ class Main extends Component {
 
                     <Route path="/" render={(props) => <Header {...props} />} />
 
-                    <Switch>
-                        <Route exact path="/" render={() => <Deshboard />} />
-                        <Route exact path="/profile" render={() => <Profile />} />
-                    </Switch>
-
                     
+
+                    <Switch>
+                        <Route path="/profile" render={() => <Profile />} />
+                        <Route path="/" render={() => <Deshboard />} />
+                    </Switch>
 
                 </div>
 
             </ConnectedRouter>
         )
     }
-    
+
     static propTypes = {
         history: propTypes.object.isRequired,
     }
