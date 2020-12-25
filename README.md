@@ -8,7 +8,7 @@ IQ-Electron 基於 [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 前�
 
 體驗 IQ-Electron 製作的 exe 應用程式
 
-#### win32 x64：[IQ-Electron-win32-x64.zip](https://iqservice.sharepoint.com/:u:/s/DevTeam1/EUZtB0E0w4NDvaWr9rALWsYBR2__VGN_5g1u_Lxv8F8HDw?e=6RF2ru)
+#### win32 x64：[IQ-Electron-win32-x64.zip](https://github.com/iq-service-inc/iq-electron/releases/tag/v1.0)
 
 ![elec-windows](https://github.com/iq-service-inc/iq-electron/blob/master/elect-window.png?raw=true)
 
@@ -99,24 +99,25 @@ electron-packager dist IQ-Electron --platform=win32 --arch=x64 --icon=dist/favic
 
 ## ENV Version
 
-* **Node.js: v14.5.1**
-* **npm: 6.14.8**
+* **Node.js: > v14** 
+* **npm: > 6**
 
 
 ## Package Version
 
-* **react: 16**
-* **redux: 4** 
-* **react-router-dom: 4** 
-* **connected-react-router: 6** 
-* **postcss-loader: 3**
-* **react-intl: 4**
-* **@fortawesome/react-fontawesome: 0.19**
+* **react: > 16**
+* **redux: > 4** 
+* **react-router-dom: > 5** 
+* **connected-react-router: > 6**
+* **postcss-loader: > 3**
+* **react-intl: > 4**
+* **@fortawesome/react-fontawesome: > 0.19**
 
 ## Dev Package Version
 
-* **babel: 7**
-* **webpack: 4**
+* **@babel/core: > 7**
+* **webpack: > 5**
+
 
 
   
