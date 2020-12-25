@@ -15,13 +15,14 @@ IQ-Electron 基於 [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 前�
 
 ## Quick Start
 
-Fork 本專案便可進行開發，完全與  [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 流程開發相同，使用瀏覽器進行網頁開發
+Fork 本專案便可進行開發，完全與  [IQ-React 2](https://github.com/iq-service-inc/iq-react2) 流程開發相同，使用瀏覽器進行網頁開發
 
   
 **可參考以下指令：**
 
+clone this project 
+
 ```
-git clone http://10.9.173.136/SideProject/IQ-Electron.git my_app
 cd my_app
 npm install
 ```
