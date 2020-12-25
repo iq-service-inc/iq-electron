@@ -1,4 +1,4 @@
-![Electron](http://10.9.173.136/uploads/-/system/temp/808c99fe99a3e9eed03d2eef73d107ac/electron.fw.png)
+![Electron](https://github.com/iq-service-inc/iq-electron/blob/master/banner.png?raw=true)
 # IQ-Electron
 
 IQ-Electron 基於 [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 前端初始包建立，你可以完全使用 IQ-React 2 一模一樣的開發經驗，無痛開發 [ElectronJS](https://www.electronjs.org/) 跨平台桌面應用程式！
@@ -10,7 +10,7 @@ IQ-Electron 基於 [IQ-React 2](http://10.9.173.136/SideProject/iq-react2) 前�
 
 #### win32 x64：[IQ-Electron-win32-x64.zip](https://iqservice.sharepoint.com/:u:/s/DevTeam1/EUZtB0E0w4NDvaWr9rALWsYBR2__VGN_5g1u_Lxv8F8HDw?e=6RF2ru)
 
-![elec-windows](http://10.9.173.136/uploads/-/system/personal_snippet/67/d9af17691fe20301acf428a9b74ac56c/elect-window.png)
+![elec-windows](https://github.com/iq-service-inc/iq-electron/blob/master/elect-window.png?raw=true)
 
 
 ## Quick Start
